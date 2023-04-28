@@ -46,6 +46,7 @@ services:
     volumes:
       - strapi-data:/var/lib/mysql
       #- ./data:/var/lib/mysql # if you want to use a bind folder
+      - ./export:/export
     ports:
       - '3306:3306'
     networks:
